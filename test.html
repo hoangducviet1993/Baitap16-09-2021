@@ -2,15 +2,27 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <title>Title</title>
+    <title>Bài tập hiển thị các số nguyên tố đầu tiên </title>
 </head>
 <body>
+<p id="result"></p>
 <script>
-    let x = 1, i;
-    for (i = 0; i < 3; i = i + 2) {
-        x = x + 1;
+    let num = 2;
+
+    for (let count = 0; count < 20; count ++) {
+        //kiểm tra số nguyên tố
+
+        let uoc = 0;
+        for (  let i = 1;i <= num;i++) {
+            if (num % i === 0) {
+                uoc += 1;
+            };
+        }
+        if (uoc === 2) {
+            document.getElementById('result').innerHTML += " " + num;
+        }
+        num++;
     }
-    console.log(x);
 </script>
 </body>
 </html>

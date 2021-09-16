@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Hiển Thị Số Nguyên tố</title>
+</head>
+<body>
+<script>
+    // let number = parseInt(prompt("Nhập Số :"))
+    let count = parseInt(prompt("Nhập Số :"))
+    // let number
+
+    // if (number < 2) {
+    //     check = false;
+    // } else {
+        for ( let number = 2; number < count ; number++) {
+            let check = true
+            for (let i = 2; i < number; i++) {
+                if (number % i === 0) {
+                    check = false;
+                    break;
+                }
+            }
+            if (check === true) {
+                document.write(number + " Là số nguyên tố" + '<br>');
+            }
+        }
+    //     if (check === true) {
+        //         document.write( number +" Là số nguyên tố"+'<br>');
+        //     } else  {
+        //         document.write( number +"___"+'<br>');
+        //     }
+        // // }
+        // }
+
+    // if (check === true) {
+    //     document.write( number +" Là số nguyên tố");
+    // } else  {
+    //     document.write( number +" Là không số nguyên tố");
+    // }
+
+
+</script>
+</body>
+</html>
