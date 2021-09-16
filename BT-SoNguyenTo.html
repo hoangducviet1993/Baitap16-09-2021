@@ -6,39 +6,37 @@
 </head>
 <body>
 <script>
-    // let number = parseInt(prompt("Nhập Số :"))
-    let count = parseInt(prompt("Nhập Số :"))
-    // let number
-
-    // if (number < 2) {
-    //     check = false;
-    // } else {
-        for ( let number = 2; number < count ; number++) {
-            let check = true
-            for (let i = 2; i < number; i++) {
-                if (number % i === 0) {
-                    check = false;
-                    break;
-                }
-            }
-            if (check === true) {
-                document.write(number + " Là số nguyên tố" + '<br>');
-            }
-        }
+            // Hiển thị số nguyên tố trong khoảng 0- count:
+    // let count = parseInt(prompt("Nhập Số :"))
+    // for ( let number = 2; number < count ; number++) {
+    //     let check = true
+    //     for (let i = 2; i < number; i++) {
+    //         if (number % i === 0) {
+    //             check = false;
+    //             break;
+    //         }
+    //     }
     //     if (check === true) {
-        //         document.write( number +" Là số nguyên tố"+'<br>');
-        //     } else  {
-        //         document.write( number +"___"+'<br>');
-        //     }
-        // // }
-        // }
-
-    // if (check === true) {
-    //     document.write( number +" Là số nguyên tố");
-    // } else  {
-    //     document.write( number +" Là không số nguyên tố");
+    //         document.write(number + " Là số nguyên tố" + '<br>');
+    //     }
     // }
-
+// Hiện thị 20 số nguyên tố
+            let count =0;
+            let number = 2
+            while (count <20) {
+                let check = true
+                for (let i = 2; i < number; i++) {
+                    if (number % i === 0) {
+                        check = false;
+                        break;
+                    }
+                }
+                if (check === true) {
+                    document.write(number + " Là số nguyên tố" + '<br>');
+                    count ++;
+                }
+                number++;
+            }
 
 </script>
 </body>
